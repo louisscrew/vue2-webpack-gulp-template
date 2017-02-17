@@ -1,0 +1,27 @@
+@import "extend.css";
+
+html{
+    height:100%;
+}
+
+$color:#000;
+
+.div3{
+    background-color: #000;
+    font-size: 16px;
+}
+
+.div2{
+    display: grid;
+    font-size: 12px;
+    background: #fff;
+}
+
+.div1{
+    background: $color;
+    display: flex;
+    border-radius: 5px;
+    #div2{
+        color: $color;
+    }
+}
