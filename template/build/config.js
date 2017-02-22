@@ -10,11 +10,7 @@ var pathBean = {
     ,staticDistPath:path.resolve(__dirname, "../"+distStr+"/static")//静态dist资源目录
 };
 
-// var s = path.join("./src", "stylesheets", '/**/*.{css}')
-// console.log(s)
 exports.path = pathBean;
-
-
 //webpack的配置
 exports.webpack = {
     outputPath:distRootPath
