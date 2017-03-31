@@ -28,4 +28,9 @@ gulp.task('development',function(){
 });
 
 //执行发版任务
-gulp.task('release',gulpSequence('clean', 'movefile', 'css:release','webpack-release'));
+gulp.task('release',function(){
+    //webpack-dev的发布任务
+    gulpSequence('clean', 'movefile', 'css:release',function(){
+        gulp.start("webpack-release");
+    });
+});
