@@ -14,7 +14,7 @@ exports.path = pathBean;
 //webpack的配置
 exports.webpack = {
     outputPath:distRootPath
-    ,serverHost:'localhost'//如果要想其他电脑也能访问，可以设置成0.0.0.0
+    ,serverHost:'0.0.0.0'//如果要想其他电脑也能访问，可以设置成0.0.0.0
     ,serverPort:8080
     ,publicPath:'/'+distStr+'/'//webpack中用到的public
 };
